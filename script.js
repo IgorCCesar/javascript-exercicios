@@ -4,7 +4,7 @@ let day = today.getDay();
 
 let dayList = ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","Monday" ];
 
-console.log("Today is: " + dayList[day] + ".");
+console.log(`Today is: ${dayList[day]}.`);
 
 let hour = today.getHours();
 
@@ -12,7 +12,7 @@ let minute = today.getMinutes();
 
 let second = today.getSeconds();
 
-let prepand = (hour >= 12)? "PM":"AM";
+let prepand = (hour >= 12) ? "PM":"AM";
 hour = (hour >= 12) ? hour - 12: hour;
 
 if (hour===0 && prepand===' PM ') 
@@ -38,7 +38,7 @@ if (hour===0 && prepand===' AM ')
     }
 }
 
-console.log("Current Time : "+ hour + prepand + " : " + minute + " : " + second);
+console.log(`Current Time : ${hour}${prepand} : ${minute} : ${second}`);
 
 
 
